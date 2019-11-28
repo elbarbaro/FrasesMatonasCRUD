@@ -40,4 +40,9 @@ public class Persona {
 	public void setFecha(Date fecha) {
 		this.fecha = fecha;
 	}
+	
+	@Override
+	public String toString() {
+		return String.format("'%s', %d, '%s'", nombre, edad, carrera);
+	}
 }

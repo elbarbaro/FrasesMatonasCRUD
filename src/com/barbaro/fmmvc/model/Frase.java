@@ -7,7 +7,7 @@ public class Frase {
 	private int idFrase;
 	private String contenido;
 	private int cantidad;
-	private Date fechaDesde;
+	private java.sql.Date fechaDesde;
 	private Date fecha;
 	
 	public int getIdFrase() {
@@ -28,10 +28,11 @@ public class Frase {
 	public void setCantidad(int cantidad) {
 		this.cantidad = cantidad;
 	}
-	public Date getFechaDesde() {
+	public java.sql.Date getFechaDesde() {
 		return fechaDesde;
 	}
-	public void setFechaDesde(Date fechaDesde) {
+	
+	public void setFechaDesde(java.sql.Date fechaDesde) {
 		this.fechaDesde = fechaDesde;
 	}
 	public Date getFecha() {
